@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02BB53D72AD9DD40007A8638 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB53D62AD9DD40007A8638 /* RoundedShape.swift */; };
 		02FC31F42AD72D99008860D5 /* Q_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC31F32AD72D99008860D5 /* Q_App.swift */; };
 		02FC31F62AD72D99008860D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC31F52AD72D99008860D5 /* ContentView.swift */; };
 		02FC31F82AD72D9B008860D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02FC31F72AD72D9B008860D5 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02BB53D62AD9DD40007A8638 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
 		02FC31F02AD72D99008860D5 /* Q?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Q?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FC31F32AD72D99008860D5 /* Q_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q_App.swift; sourceTree = "<group>"; };
 		02FC31F52AD72D99008860D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -170,8 +172,8 @@
 		02FC321D2AD72EB6008860D5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				02FC32572AD9A076008860D5 /* Authentication */,
 				02FC32232AD72EEE008860D5 /* Components */,
+				02FC32572AD9A076008860D5 /* Authentication */,
 				02FC32502AD98135008860D5 /* UploadQuestion */,
 				02FC32432AD8BB81008860D5 /* SideMenu */,
 				02FC32312AD79CB8008860D5 /* Profile */,
@@ -220,6 +222,7 @@
 				02FC32402AD8ABBE008860D5 /* User */,
 				02FC32282AD7317A008860D5 /* Qs Tweets */,
 				02FC32552AD98527008860D5 /* TextArea.swift */,
+				02BB53D62AD9DD40007A8638 /* RoundedShape.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				02FC32542AD9815F008860D5 /* NewQuestionView.swift in Sources */,
 				02FC324B2AD8BC17008860D5 /* SideMenuViewModel.swift in Sources */,
 				02FC32422AD8ABDF008860D5 /* UserRowView.swift in Sources */,
+				02BB53D72AD9DD40007A8638 /* RoundedShape.swift in Sources */,
 				02FC324F2AD8E214008860D5 /* SideMenuOptionRowView.swift in Sources */,
 				02FC322D2AD79A20008860D5 /* MainTabView.swift in Sources */,
 				02FC325B2AD9A09B008860D5 /* LoginView.swift in Sources */,
