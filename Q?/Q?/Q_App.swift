@@ -21,6 +21,7 @@ struct Q_App: App {
             NavigationView {
 //                ContentView()
                 ProfilePhotoSelectorView()
+//                LoginView()
             }
             .environmentObject(viewModel)
         }

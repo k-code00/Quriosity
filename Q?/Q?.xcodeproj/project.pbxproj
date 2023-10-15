@@ -19,6 +19,7 @@
 		02BB53EB2ADB5896007A8638 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB53EA2ADB5896007A8638 /* AuthViewModel.swift */; };
 		02BB53ED2ADC0819007A8638 /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB53EC2ADC0819007A8638 /* ProfilePhotoSelectorView.swift */; };
 		02BB53F02ADC1216007A8638 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB53EF2ADC1216007A8638 /* ImagePicker.swift */; };
+		02BB53F22ADC278B007A8638 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB53F12ADC278B007A8638 /* ImageUploader.swift */; };
 		02FC31F42AD72D99008860D5 /* Q_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC31F32AD72D99008860D5 /* Q_App.swift */; };
 		02FC31F62AD72D99008860D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC31F52AD72D99008860D5 /* ContentView.swift */; };
 		02FC31F82AD72D9B008860D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02FC31F72AD72D9B008860D5 /* Assets.xcassets */; };
@@ -71,6 +72,7 @@
 		02BB53EA2ADB5896007A8638 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		02BB53EC2ADC0819007A8638 /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		02BB53EF2ADC1216007A8638 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		02BB53F12ADC278B007A8638 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		02FC31F02AD72D99008860D5 /* Q?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Q?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FC31F32AD72D99008860D5 /* Q_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q_App.swift; sourceTree = "<group>"; };
 		02FC31F52AD72D99008860D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 		02FC321F2AD72EC8008860D5 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				02BB53F12ADC278B007A8638 /* ImageUploader.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -608,6 +611,7 @@
 				02FC322D2AD79A20008860D5 /* MainTabView.swift in Sources */,
 				02FC325B2AD9A09B008860D5 /* LoginView.swift in Sources */,
 				02BB53EB2ADB5896007A8638 /* AuthViewModel.swift in Sources */,
+				02BB53F22ADC278B007A8638 /* ImageUploader.swift in Sources */,
 				02FC32352AD79D27008860D5 /* NotificationsView.swift in Sources */,
 				02FC324D2AD8BE42008860D5 /* UserStatsView.swift in Sources */,
 				02FC325E2AD9A0B7008860D5 /* RegistrationView.swift in Sources */,
