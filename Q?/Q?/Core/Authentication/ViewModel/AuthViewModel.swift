@@ -10,15 +10,18 @@ import Firebase
 import FirebaseAuth
 import FirebaseFirestore
 
+//chech User & Users -> confusion might run into logic errors
 class AuthViewModel: ObservableObject {
     @Published var userSession: User?
     @Published var didAuthenticateUser = false
+    @Published var currentUser: Users?
     private var tempUserSession: User?
+    
+    private let service = UserService()
     
     init() {
         self.userSession = Auth.auth().currentUser
-        
-        print("DEBUG: User Session Is \(self.userSession)")
+        self.fetchUser()
     }
     
     func login(withEmail email: String, password: String) {
@@ -76,4 +79,12 @@ class AuthViewModel: ObservableObject {
                 }
         }
     }
- }
+    
+    func fetchUser() {
+        guard let uid = self.userSession?.uid else { return }
+        
+        service.fetchUser(withUid: uid) { user in
+            self.currentUser = user
+        }
+    }
+}
