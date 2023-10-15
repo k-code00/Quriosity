@@ -20,21 +20,37 @@ struct ProfilePhotoSelectorView: View {
             Button {
                 showImagePicker.toggle()
             } label: {
-                Image("addProfilePhoto")
-                    .resizable()
-                //changing color of button to match app blue
-                    .renderingMode(.template)
-                    .foregroundColor(Color(.systemBlue))
-                    .frame(width: 180, height: 180)
-                    .padding(.top, 44)
+                
+                if let profileImage = profileImage {
+                    profileImage
+                        .modifier(ProfileImageModifier())
+                } else {
+                    Image("addProfilePhoto")
+                        .renderingMode(.template)
+                        .modifier(ProfileImageModifier())
+                }
             }
             .sheet(isPresented: $showImagePicker) {
                 ImagePicker(selectedImage: $selectedImage)
             }
+            .padding(.top, 44)
             
             Spacer()
         }
         .ignoresSafeArea()
+    }
+    func loadImage() {
+        guard let selectedImage = selectedImage else { return }
+        profileImage = Image(uiImage: selectedImage)
+    }
+}
+
+private struct ProfileImageModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .foregroundColor(Color(.systemBlue))
+            .frame(width: 180, height: 180)
+            .clipShape(Circle())
     }
 }
 
