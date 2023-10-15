@@ -22,7 +22,7 @@ struct FeedView: View {
             Button {
                 showNewQuestionView.toggle()
             } label: {
-                Image(systemName: "book")
+                Image("addQuestion")
                     .resizable()
                     .renderingMode(.template)
                     .frame(width: 28, height: 28)

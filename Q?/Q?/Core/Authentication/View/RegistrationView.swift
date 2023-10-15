@@ -17,10 +17,15 @@ struct RegistrationView: View {
     
     
     var body: some View {
-        VStack(spacing: 40) {
+        VStack {
+            
+            NavigationLink(destination: ProfilePhotoSelectorView(),
+                           isActive: $viewModel.didAuthenticateUser,
+                           label: {})
+            
             AuthHeaderView(title1: "Get Started.", title2: "Create Your Account.")
             
-            VStack {
+            VStack(spacing: 40) {
                 CustomInputField(imageName: "envelope",
                                  placeholderText: "Email",
                                  text: $email)
