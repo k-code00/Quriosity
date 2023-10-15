@@ -2,7 +2,7 @@
 //  ProfileView.swift
 //  Q?
 //
-//  Created by Consultant on 12/10/2023.
+//  Created by kojo on 12/10/2023.
 //
 
 import SwiftUI

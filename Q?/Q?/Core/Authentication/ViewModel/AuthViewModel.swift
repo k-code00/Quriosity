@@ -28,7 +28,7 @@ class AuthViewModel: ObservableObject {
                 return
             }
             
-            guard let user = result?.user else {return}
+            guard let user = result?.user else { return }
             self.userSession = user
             print("DEBUG: Did Log User In")
         }
@@ -41,7 +41,7 @@ class AuthViewModel: ObservableObject {
                 return
             }
             
-            guard let user = result?.user else {return}
+            guard let user = result?.user else { return }
             self.tempUserSession  = user
             
             let data = ["email": email,
@@ -67,5 +67,13 @@ class AuthViewModel: ObservableObject {
     
     func uploadProfileImage(_ image: UIImage) {
         guard let uid = tempUserSession?.uid else { return }
+        
+        ImageUploader.uploadImage(image: image) { profileImageUrl in
+            Firestore.firestore().collection("users")
+                .document(uid)
+                .updateData(["profileImageUrl": profileImageUrl]) { _ in
+                    self.userSession = self.tempUserSession
+                }
+        }
     }
  }

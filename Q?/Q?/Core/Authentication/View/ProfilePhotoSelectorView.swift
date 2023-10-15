@@ -2,7 +2,7 @@
 //  ProfilePhotoSelectorView.swift
 //  Q?
 //
-//  Created by Consultant on 15/10/2023.
+//  Created by kojo on 15/10/2023.
 //
 
 import SwiftUI
@@ -11,6 +11,7 @@ struct ProfilePhotoSelectorView: View {
     @State private var showImagePicker = false
     @State private var selectedImage: UIImage?
     @State private var profileImage: Image?
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         VStack {
@@ -37,9 +38,9 @@ struct ProfilePhotoSelectorView: View {
             }
             .padding(.top, 44)
             
-            if profileImage != nil {
+            if let selectedImage = selectedImage {
                 Button {
-                    print("DEBUG: Finish Registering User")
+                    viewModel.uploadProfileImage(selectedImage)
                 } label: {
                     Text("Continue")
                         .font(.headline)
