@@ -10,8 +10,8 @@ import Firebase
 
 @main
 struct Q_App: App {
-    @StateObject var viewModel = AuthViewModel()
     
+    @StateObject var viewModel = AuthViewModel()
     init() {
         FirebaseApp.configure()
     }

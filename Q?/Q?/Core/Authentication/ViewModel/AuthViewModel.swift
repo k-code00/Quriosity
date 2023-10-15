@@ -2,17 +2,18 @@
 //  AuthViewModel.swift
 //  Q?
 //
-//  Created by Consultant on 14/10/2023.
+//  Created by kojo on 14/10/2023.
 //
 
 import SwiftUI
 import Firebase
-//import FirebaseAuth
+import FirebaseAuth
+import FirebaseFirestore
 
 class AuthViewModel: ObservableObject {
-    @Published var userSession: FirebaseAuth.User?
+    @Published var userSession: User?
     @Published var didAuthenticateUser = false
-    private var tempUserSession: FirebaseAuth.User?
+    private var tempUserSession: User?
     
     init() {
         self.userSession = Auth.auth().currentUser
@@ -41,7 +42,7 @@ class AuthViewModel: ObservableObject {
             }
             
             guard let user = result?.user else {return}
-            tempUserSession  = user
+            self.tempUserSession  = user
             
             let data = ["email": email,
                         "username": username.lowercased(),
@@ -65,6 +66,6 @@ class AuthViewModel: ObservableObject {
     }
     
     func uploadProfileImage(_ image: UIImage) {
-        guard let uid = tempUserSession?uid else { return }
+        guard let uid = tempUserSession?.uid else { return }
     }
  }

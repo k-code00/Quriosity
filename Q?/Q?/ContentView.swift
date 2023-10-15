@@ -23,12 +23,6 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    NavigationView {
-        ContentView()
-    }
-}
-
 extension ContentView {
     var mainInterfaceView: some View {
         ZStack(alignment: .topLeading) {
@@ -71,5 +65,11 @@ extension ContentView {
         .onAppear {
             showMenu = false
         }
+    }
+}
+
+#Preview {
+    NavigationView {
+        ContentView()
     }
 }
