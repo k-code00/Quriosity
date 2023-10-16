@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyBSqCPa8nHnZ9T1sZqRODP7qb94smiWQuo</string>
+	<string>AIzaSyArWyyVS2pwi21NlQPLO4WaJP9Iq7jWDXo</string>
 	<key>GCM_SENDER_ID</key>
-	<string>785468549265</string>
+	<string>409937090211</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.mac.kojotc.Q-</string>
 	<key>PROJECT_ID</key>
-	<string>quriosity-a7e19</string>
+	<string>quriosity-4e820</string>
 	<key>STORAGE_BUCKET</key>
-	<string>quriosity-a7e19.appspot.com</string>
+	<string>quriosity-4e820.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:785468549265:ios:3ca365c4817a851e747730</string>
+	<string>1:409937090211:ios:632faff75322a46da89116</string>
 </dict>
 </plist>

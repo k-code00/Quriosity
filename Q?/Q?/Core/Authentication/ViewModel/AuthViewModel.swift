@@ -24,6 +24,8 @@ class AuthViewModel: ObservableObject {
         self.fetchUser()
     }
     
+    //add logic for incorrect email / password
+    // mock auth for testing
     func login(withEmail email: String, password: String) {
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if let error = error {
@@ -37,6 +39,7 @@ class AuthViewModel: ObservableObject {
         }
     }
     
+    // mock auth for testing
     func register(withEmail email: String, password: String, fullname: String, username: String) {
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
             if let error = error {
