@@ -20,6 +20,8 @@ struct SideMenuView: View {
                         .scaledToFill()
                         .clipShape(Circle())
                         .frame(width: 48, height: 48)
+                    Circle()
+                        .frame(width: 48, height: 48)
                     
                     VStack(alignment: .leading, spacing: 4) {
                         Text(user.fullname)
@@ -59,4 +61,5 @@ struct SideMenuView: View {
 
 #Preview {
     SideMenuView()
+        .environmentObject(AuthViewModel())
 }

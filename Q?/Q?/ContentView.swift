@@ -65,6 +65,8 @@ extension ContentView {
                             .scaledToFill()
                             .frame(width: 32, height: 32)
                             .clipShape(Circle())
+//                        Circle()
+//                            .frame(width: 32, height: 32)
                     }
                 }
             }
@@ -72,11 +74,5 @@ extension ContentView {
         .onAppear {
             showMenu = false
         }
-    }
-}
-
-#Preview {
-    NavigationView {
-        ContentView()
     }
 }

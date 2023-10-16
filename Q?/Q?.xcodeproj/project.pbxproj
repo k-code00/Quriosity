@@ -14,7 +14,6 @@
 		02027BD12ADC8E0A002D0FF3 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02027BD02ADC8E0A002D0FF3 /* UserService.swift */; };
 		02027BD32ADC9102002D0FF3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02027BD22ADC9102002D0FF3 /* User.swift */; };
 		02027BD62ADC98F4002D0FF3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 02027BD52ADC98F4002D0FF3 /* Kingfisher */; };
-		02027BD82ADD7613002D0FF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02027BD72ADD7613002D0FF3 /* AppDelegate.swift */; };
 		02027BDC2ADD863D002D0FF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02027BDB2ADD863D002D0FF3 /* GoogleService-Info.plist */; };
 		02BB53D72AD9DD40007A8638 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB53D62AD9DD40007A8638 /* RoundedShape.swift */; };
 		02BB53D92AD9E94B007A8638 /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB53D82AD9E94B007A8638 /* CustomInputField.swift */; };
@@ -40,7 +39,6 @@
 		02FC323D2AD8484E008860D5 /* QFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC323C2AD8484E008860D5 /* QFilterViewModel.swift */; };
 		02FC32422AD8ABDF008860D5 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC32412AD8ABDF008860D5 /* UserRowView.swift */; };
 		02FC32472AD8BBCE008860D5 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC32462AD8BBCE008860D5 /* SideMenuView.swift */; };
-		02FC32492AD8BBF8008860D5 /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC32482AD8BBF8008860D5 /* SideMenuRowView.swift */; };
 		02FC324B2AD8BC17008860D5 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC324A2AD8BC17008860D5 /* SideMenuViewModel.swift */; };
 		02FC324D2AD8BE42008860D5 /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC324C2AD8BE42008860D5 /* UserStatsView.swift */; };
 		02FC324F2AD8E214008860D5 /* SideMenuOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC324E2AD8E214008860D5 /* SideMenuOptionRowView.swift */; };
@@ -70,7 +68,6 @@
 /* Begin PBXFileReference section */
 		02027BD02ADC8E0A002D0FF3 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		02027BD22ADC9102002D0FF3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		02027BD72ADD7613002D0FF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02027BDB2ADD863D002D0FF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		02BB53D62AD9DD40007A8638 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
 		02BB53D82AD9E94B007A8638 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
@@ -99,7 +96,6 @@
 		02FC323C2AD8484E008860D5 /* QFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFilterViewModel.swift; sourceTree = "<group>"; };
 		02FC32412AD8ABDF008860D5 /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
 		02FC32462AD8BBCE008860D5 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
-		02FC32482AD8BBF8008860D5 /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
 		02FC324A2AD8BC17008860D5 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
 		02FC324C2AD8BE42008860D5 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
 		02FC324E2AD8E214008860D5 /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
@@ -180,7 +176,6 @@
 				02FC31F72AD72D9B008860D5 /* Assets.xcassets */,
 				02027BDB2ADD863D002D0FF3 /* GoogleService-Info.plist */,
 				02FC31F92AD72D9B008860D5 /* Preview Content */,
-				02027BD72ADD7613002D0FF3 /* AppDelegate.swift */,
 			);
 			path = "Q?";
 			sourceTree = "<group>";
@@ -398,7 +393,6 @@
 			isa = PBXGroup;
 			children = (
 				02FC32462AD8BBCE008860D5 /* SideMenuView.swift */,
-				02FC32482AD8BBF8008860D5 /* SideMenuRowView.swift */,
 				02FC324E2AD8E214008860D5 /* SideMenuOptionRowView.swift */,
 			);
 			path = View;
@@ -602,7 +596,6 @@
 				02FC32372AD79D46008860D5 /* MessagesView.swift in Sources */,
 				02FC323B2AD833E5008860D5 /* ProfileView.swift in Sources */,
 				02FC323D2AD8484E008860D5 /* QFilterViewModel.swift in Sources */,
-				02FC32492AD8BBF8008860D5 /* SideMenuRowView.swift in Sources */,
 				02BB53DC2AD9EBDD007A8638 /* AuthHeaderView.swift in Sources */,
 				02FC31F62AD72D99008860D5 /* ContentView.swift in Sources */,
 				02FC322A2AD731BB008860D5 /* QRowView.swift in Sources */,
@@ -616,7 +609,6 @@
 				02BB53F02ADC1216007A8638 /* ImagePicker.swift in Sources */,
 				02FC32542AD9815F008860D5 /* NewQuestionView.swift in Sources */,
 				02BB53ED2ADC0819007A8638 /* ProfilePhotoSelectorView.swift in Sources */,
-				02027BD82ADD7613002D0FF3 /* AppDelegate.swift in Sources */,
 				02FC324B2AD8BC17008860D5 /* SideMenuViewModel.swift in Sources */,
 				02FC32422AD8ABDF008860D5 /* UserRowView.swift in Sources */,
 				02BB53D72AD9DD40007A8638 /* RoundedShape.swift in Sources */,

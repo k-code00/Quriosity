@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 enum SideMenuViewModel: Int, CaseIterable {
     case profile
