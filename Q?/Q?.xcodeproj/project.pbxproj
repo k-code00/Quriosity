@@ -15,6 +15,7 @@
 		02027BD32ADC9102002D0FF3 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02027BD22ADC9102002D0FF3 /* Users.swift */; };
 		02027BD62ADC98F4002D0FF3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 02027BD52ADC98F4002D0FF3 /* Kingfisher */; };
 		02027BDC2ADD863D002D0FF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02027BDB2ADD863D002D0FF3 /* GoogleService-Info.plist */; };
+		027DA2DD2ADE0F3A00AC40A6 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DA2DC2ADE0F3A00AC40A6 /* ExploreViewModel.swift */; };
 		02BB53D72AD9DD40007A8638 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB53D62AD9DD40007A8638 /* RoundedShape.swift */; };
 		02BB53D92AD9E94B007A8638 /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB53D82AD9E94B007A8638 /* CustomInputField.swift */; };
 		02BB53DC2AD9EBDD007A8638 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB53DB2AD9EBDD007A8638 /* AuthHeaderView.swift */; };
@@ -69,6 +70,7 @@
 		02027BD02ADC8E0A002D0FF3 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		02027BD22ADC9102002D0FF3 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		02027BDB2ADD863D002D0FF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		027DA2DC2ADE0F3A00AC40A6 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		02BB53D62AD9DD40007A8638 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
 		02BB53D82AD9E94B007A8638 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
 		02BB53DB2AD9EBDD007A8638 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
@@ -359,6 +361,7 @@
 		02FC323F2AD8AB9D008860D5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				027DA2DC2ADE0F3A00AC40A6 /* ExploreViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -604,6 +607,7 @@
 				02FC32272AD72F84008860D5 /* FeedView.swift in Sources */,
 				02FC32562AD98527008860D5 /* TextArea.swift in Sources */,
 				02FC32472AD8BBCE008860D5 /* SideMenuView.swift in Sources */,
+				027DA2DD2ADE0F3A00AC40A6 /* ExploreViewModel.swift in Sources */,
 				02FC31F42AD72D99008860D5 /* Q_App.swift in Sources */,
 				02FC32332AD79CFA008860D5 /* ExploreView.swift in Sources */,
 				02BB53F02ADC1216007A8638 /* ImagePicker.swift in Sources */,
