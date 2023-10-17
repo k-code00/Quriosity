@@ -12,7 +12,7 @@
 		02027BCD2ADC84FD002D0FF3 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 02027BCC2ADC84FD002D0FF3 /* FirebaseFirestoreSwift */; };
 		02027BCF2ADC84FD002D0FF3 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 02027BCE2ADC84FD002D0FF3 /* FirebaseStorage */; };
 		02027BD12ADC8E0A002D0FF3 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02027BD02ADC8E0A002D0FF3 /* UserService.swift */; };
-		02027BD32ADC9102002D0FF3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02027BD22ADC9102002D0FF3 /* User.swift */; };
+		02027BD32ADC9102002D0FF3 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02027BD22ADC9102002D0FF3 /* Users.swift */; };
 		02027BD62ADC98F4002D0FF3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 02027BD52ADC98F4002D0FF3 /* Kingfisher */; };
 		02027BDC2ADD863D002D0FF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02027BDB2ADD863D002D0FF3 /* GoogleService-Info.plist */; };
 		02BB53D72AD9DD40007A8638 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB53D62AD9DD40007A8638 /* RoundedShape.swift */; };
@@ -67,7 +67,7 @@
 
 /* Begin PBXFileReference section */
 		02027BD02ADC8E0A002D0FF3 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
-		02027BD22ADC9102002D0FF3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		02027BD22ADC9102002D0FF3 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		02027BDB2ADD863D002D0FF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		02BB53D62AD9DD40007A8638 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
 		02BB53D82AD9E94B007A8638 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
@@ -234,7 +234,7 @@
 		02FC32202AD72ECA008860D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				02027BD22ADC9102002D0FF3 /* User.swift */,
+				02027BD22ADC9102002D0FF3 /* Users.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -599,7 +599,7 @@
 				02BB53DC2AD9EBDD007A8638 /* AuthHeaderView.swift in Sources */,
 				02FC31F62AD72D99008860D5 /* ContentView.swift in Sources */,
 				02FC322A2AD731BB008860D5 /* QRowView.swift in Sources */,
-				02027BD32ADC9102002D0FF3 /* User.swift in Sources */,
+				02027BD32ADC9102002D0FF3 /* Users.swift in Sources */,
 				02BB53D92AD9E94B007A8638 /* CustomInputField.swift in Sources */,
 				02FC32272AD72F84008860D5 /* FeedView.swift in Sources */,
 				02FC32562AD98527008860D5 /* TextArea.swift in Sources */,

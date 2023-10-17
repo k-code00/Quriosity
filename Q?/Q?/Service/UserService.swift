@@ -17,10 +17,15 @@ struct UserService {
             .getDocument { snapshot, _ in
                 guard let snapshot = snapshot else { return }
                 
-                guard let users = try? snapshot.data(as: Users.self) else { return }
-                
-                print("DEBUG: Username Is \(users.username)")
-                print("DEBUG: Email Is \(users.email)")
+                guard let user = try? snapshot.data(as: Users.self) else { return }
+                completion(user)
+            }
+    }
+    
+    func fetchUsers(completion: @escaping([Users]) -> Void) {
+        Firestore.firestore().collection("users")
+            .getDocuments { snapshot, _ in
+                guard let documents = snapshot?.documents else { return }
             }
     }
 }

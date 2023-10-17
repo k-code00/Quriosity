@@ -9,8 +9,10 @@ import SwiftUI
 import Firebase
 import FirebaseAuth
 import FirebaseFirestore
+import FirebaseFirestoreSwift
+import FirebaseStorage
 
-//chech User & Users -> confusion might run into logic errors
+//check User & Users -> confusion might run into logic errors
 class AuthViewModel: ObservableObject {
     @Published var userSession: User?
     @Published var didAuthenticateUser = false
@@ -35,7 +37,7 @@ class AuthViewModel: ObservableObject {
             
             guard let user = result?.user else { return }
             self.userSession = user
-            print("DEBUG: Did Log User In")
+            self.fetchUser()
         }
     }
     
@@ -65,6 +67,7 @@ class AuthViewModel: ObservableObject {
     
     func signOut() {
         //sets user session to nil so login screens shows
+        didAuthenticateUser = false
         userSession = nil
         
         //sign out on server
@@ -79,6 +82,7 @@ class AuthViewModel: ObservableObject {
                 .document(uid)
                 .updateData(["profileImageUrl": profileImageUrl]) { _ in
                     self.userSession = self.tempUserSession
+                    self.fetchUser()
                 }
         }
     }
