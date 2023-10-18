@@ -64,5 +64,19 @@ struct QuestionService {
                 }
             }
     }
+    
+    
+    func checkIfUserLikedQuestion(_ question: Question, completion: @escaping(Bool) -> Void) {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        guard let questionId = question.id else { return }
+        
+        Firestore.firestore().collection("users")
+            .document(uid)
+            .collection("user-likes")
+            .document(questionId).getDocument { snapshot, _ in
+                guard let snapshot = snapshot else { return }
+                completion(snapshot.exists)
+            }
+    }
 }
 
