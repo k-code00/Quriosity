@@ -153,18 +153,18 @@ extension ProfileView {
         ScrollView {
             LazyVStack {
                 ForEach(0...9, id: \.self) { _ in
-                    QRowView()
-                        .padding()
+//                    QRowView()
+//                        .padding()
                 }
             }
         }
     }
 }
 
-#Preview {
-    ProfileView(user: Users(id: NSUUID().uuidString,
-                            username: "Batman",
-                            fullname: "Bruce Wayne",
-                            profileImageUrl: "",
-                            email: "batman@gmail.com"))
-}
+//#Preview {
+//    ProfileView(user: Users(id: NSUUID().uuidString,
+//                            username: "Batman",
+//                            fullname: "Bruce Wayne",
+//                            profileImageUrl: "",
+//                            email: "batman@gmail.com"))
+//}

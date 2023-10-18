@@ -19,8 +19,8 @@ struct Q_App: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-//                ContentView()
-                ExploreView()
+                ContentView()
+//                ExploreView()
                 
             }
             .environmentObject(viewModel)

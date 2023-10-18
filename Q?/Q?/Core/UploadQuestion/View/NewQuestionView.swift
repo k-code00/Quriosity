@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct NewQuestionView: View {
     @State private var caption = ""
     @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var authViewModel: AuthViewModel
+    @ObservedObject var viewModel = UploadQuestionViewModel()
     
     var body: some View {
         VStack {
@@ -24,7 +27,7 @@ struct NewQuestionView: View {
                 Spacer()
                 
                 Button {
-                    print("Question")
+                    viewModel.uploadQuestion(withCaption: caption)
                 } label: {
                     Text("Question")
                         .bold()
@@ -38,12 +41,22 @@ struct NewQuestionView: View {
             .padding()
             
             HStack(alignment: .top) {
-                Circle()
-                    .frame(width: 64, height: 64)
+                if let user = authViewModel.currentUser {
+                    KFImage(URL(string: user.profileImageUrl))
+                        .resizable()
+                        .scaledToFill()
+                        .clipShape(Circle())
+                        .frame(width: 64, height: 64)
+                }
                 //placeholder text is not showing up -> DEBUG
                 TextArea("Ask Me A Question?", text: $caption)
             }
             .padding()
+        }
+        .onReceive(viewModel.$didUploadQuestion) { success in
+            if success {
+                presentationMode.wrappedValue.dismiss()
+            }
         }
     }
 }

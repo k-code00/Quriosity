@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct QRowView: View {
+    let question: Question
+    
+    
     var body: some View {
         VStack(alignment: .leading) {
             
@@ -33,7 +36,7 @@ struct QRowView: View {
                             .font(.caption)
                     }
                     //Q caption
-                    Text("Ive got a question..?")
+                    Text(question.caption)
                         .font(.subheadline)
                         .multilineTextAlignment(.leading)
                 }
@@ -83,6 +86,6 @@ struct QRowView: View {
     }
 }
 
-#Preview {
-    QRowView()
-}
+//#Preview {
+//    QRowView()
+//}

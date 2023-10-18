@@ -16,6 +16,11 @@
 		02027BD62ADC98F4002D0FF3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 02027BD52ADC98F4002D0FF3 /* Kingfisher */; };
 		02027BDC2ADD863D002D0FF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02027BDB2ADD863D002D0FF3 /* GoogleService-Info.plist */; };
 		027DA2DD2ADE0F3A00AC40A6 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DA2DC2ADE0F3A00AC40A6 /* ExploreViewModel.swift */; };
+		027DA2E12ADF52FD00AC40A6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DA2E02ADF52FD00AC40A6 /* SearchBar.swift */; };
+		027DA2E32ADF5B5400AC40A6 /* QuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DA2E22ADF5B5400AC40A6 /* QuestionService.swift */; };
+		027DA2E52ADF622C00AC40A6 /* UploadQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DA2E42ADF622C00AC40A6 /* UploadQuestionViewModel.swift */; };
+		027DA2E72ADF6D0B00AC40A6 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DA2E62ADF6D0B00AC40A6 /* FeedViewModel.swift */; };
+		027DA2E92ADF6E4D00AC40A6 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DA2E82ADF6E4D00AC40A6 /* Question.swift */; };
 		02BB53D72AD9DD40007A8638 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB53D62AD9DD40007A8638 /* RoundedShape.swift */; };
 		02BB53D92AD9E94B007A8638 /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB53D82AD9E94B007A8638 /* CustomInputField.swift */; };
 		02BB53DC2AD9EBDD007A8638 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB53DB2AD9EBDD007A8638 /* AuthHeaderView.swift */; };
@@ -71,6 +76,11 @@
 		02027BD22ADC9102002D0FF3 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		02027BDB2ADD863D002D0FF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		027DA2DC2ADE0F3A00AC40A6 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		027DA2E02ADF52FD00AC40A6 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		027DA2E22ADF5B5400AC40A6 /* QuestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionService.swift; sourceTree = "<group>"; };
+		027DA2E42ADF622C00AC40A6 /* UploadQuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadQuestionViewModel.swift; sourceTree = "<group>"; };
+		027DA2E62ADF6D0B00AC40A6 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		027DA2E82ADF6E4D00AC40A6 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		02BB53D62AD9DD40007A8638 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
 		02BB53D82AD9E94B007A8638 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
 		02BB53DB2AD9EBDD007A8638 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
@@ -229,6 +239,7 @@
 			children = (
 				02BB53F12ADC278B007A8638 /* ImageUploader.swift */,
 				02027BD02ADC8E0A002D0FF3 /* UserService.swift */,
+				027DA2E22ADF5B5400AC40A6 /* QuestionService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -237,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				02027BD22ADC9102002D0FF3 /* Users.swift */,
+				027DA2E82ADF6E4D00AC40A6 /* Question.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -265,6 +277,7 @@
 				02FC32552AD98527008860D5 /* TextArea.swift */,
 				02BB53D62AD9DD40007A8638 /* RoundedShape.swift */,
 				02BB53D82AD9E94B007A8638 /* CustomInputField.swift */,
+				027DA2E02ADF52FD00AC40A6 /* SearchBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -272,6 +285,7 @@
 		02FC32242AD72F3D008860D5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				027DA2E62ADF6D0B00AC40A6 /* FeedViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -421,6 +435,7 @@
 		02FC32522AD98147008860D5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				027DA2E42ADF622C00AC40A6 /* UploadQuestionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -598,8 +613,10 @@
 				02027BD12ADC8E0A002D0FF3 /* UserService.swift in Sources */,
 				02FC32372AD79D46008860D5 /* MessagesView.swift in Sources */,
 				02FC323B2AD833E5008860D5 /* ProfileView.swift in Sources */,
+				027DA2E92ADF6E4D00AC40A6 /* Question.swift in Sources */,
 				02FC323D2AD8484E008860D5 /* QFilterViewModel.swift in Sources */,
 				02BB53DC2AD9EBDD007A8638 /* AuthHeaderView.swift in Sources */,
+				027DA2E72ADF6D0B00AC40A6 /* FeedViewModel.swift in Sources */,
 				02FC31F62AD72D99008860D5 /* ContentView.swift in Sources */,
 				02FC322A2AD731BB008860D5 /* QRowView.swift in Sources */,
 				02027BD32ADC9102002D0FF3 /* Users.swift in Sources */,
@@ -610,8 +627,10 @@
 				027DA2DD2ADE0F3A00AC40A6 /* ExploreViewModel.swift in Sources */,
 				02FC31F42AD72D99008860D5 /* Q_App.swift in Sources */,
 				02FC32332AD79CFA008860D5 /* ExploreView.swift in Sources */,
+				027DA2E52ADF622C00AC40A6 /* UploadQuestionViewModel.swift in Sources */,
 				02BB53F02ADC1216007A8638 /* ImagePicker.swift in Sources */,
 				02FC32542AD9815F008860D5 /* NewQuestionView.swift in Sources */,
+				027DA2E12ADF52FD00AC40A6 /* SearchBar.swift in Sources */,
 				02BB53ED2ADC0819007A8638 /* ProfilePhotoSelectorView.swift in Sources */,
 				02FC324B2AD8BC17008860D5 /* SideMenuViewModel.swift in Sources */,
 				02FC32422AD8ABDF008860D5 /* UserRowView.swift in Sources */,
@@ -622,6 +641,7 @@
 				02BB53EB2ADB5896007A8638 /* AuthViewModel.swift in Sources */,
 				02BB53F22ADC278B007A8638 /* ImageUploader.swift in Sources */,
 				02FC32352AD79D27008860D5 /* NotificationsView.swift in Sources */,
+				027DA2E32ADF5B5400AC40A6 /* QuestionService.swift in Sources */,
 				02FC324D2AD8BE42008860D5 /* UserStatsView.swift in Sources */,
 				02FC325E2AD9A0B7008860D5 /* RegistrationView.swift in Sources */,
 			);
