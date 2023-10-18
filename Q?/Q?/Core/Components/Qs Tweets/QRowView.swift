@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct QRowView: View {
     let question: Question
@@ -15,30 +16,34 @@ struct QRowView: View {
         VStack(alignment: .leading) {
             
             //profile image + user info + Qs
-            HStack(alignment: .top, spacing: 12) {
-                Circle()
-                    .frame(width: 56, height: 56)
-                    .foregroundColor(Color(.systemBlue))
-                
-                //user information & Q caption
-                VStack(alignment: .leading, spacing: 4) {
-                    //user information
-                    HStack {
-                        Text(user.fullname)
-                            .font(.subheadline).bold()
-                        
-                        Text("\(user.username)")
-                            .foregroundColor(.gray)
-                            .font(.caption)
-                        
-                        Text("2w")
-                            .foregroundColor(.gray)
-                            .font(.caption)
+            if let user = question.users {
+                HStack(alignment: .top, spacing: 12) {
+                    KFImage(URL(string: user.profileImageUrl))
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 56, height: 56)
+                        .clipShape(Circle())
+                    
+                    //user information & Q caption
+                    VStack(alignment: .leading, spacing: 4) {
+                        //user information
+                        HStack {
+                            Text(user.fullname)
+                                .font(.subheadline).bold()
+                            
+                            Text("\(user.username)")
+                                .foregroundColor(.gray)
+                                .font(.caption)
+                            
+                            Text("2w")
+                                .foregroundColor(.gray)
+                                .font(.caption)
+                        }
+                        //Q caption
+                        Text(question.caption)
+                            .font(.subheadline)
+                            .multilineTextAlignment(.leading)
                     }
-                    //Q caption
-                    Text(question.caption)
-                        .font(.subheadline)
-                        .multilineTextAlignment(.leading)
                 }
             }
             //icons
