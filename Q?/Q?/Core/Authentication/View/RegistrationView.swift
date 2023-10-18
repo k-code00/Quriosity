@@ -12,8 +12,14 @@ struct RegistrationView: View {
     @State private var username = ""
     @State private var fullname = ""
     @State private var password = ""
+    
+//    @Environment was used to handle my view presentations
+    // A reference to the presentation mode of the current view. This can be used to programmatically dismiss the view.
     @Environment(\.presentationMode) var presentationMode
+
+    // A shared authentication view model instance from the environment. This can be used to perform authentication actions and to observe authentication state.
     @EnvironmentObject var viewModel: AuthViewModel
+
     
     
     var body: some View {

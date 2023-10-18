@@ -18,6 +18,7 @@ struct MainTabView: View {
                 })
                 .tabItem {
                     Image(systemName: "house")
+//                        .foregroundColor(Color(.systemPurple))
                 }.tag(0)
             
             ExploreView()
@@ -26,6 +27,7 @@ struct MainTabView: View {
                 })
                 .tabItem {
                     Image(systemName: "magnifyingglass")
+//                        .foregroundColor(Color(.systemPurple))
                 }.tag(1)
             
 //            NotificationsView()

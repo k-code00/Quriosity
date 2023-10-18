@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+//caseiterable - provides a collection of all of its cases
 enum QFilterViewModel: Int, CaseIterable {
     case questions
     case replies

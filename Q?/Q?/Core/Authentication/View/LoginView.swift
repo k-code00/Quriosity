@@ -8,18 +8,24 @@
 import SwiftUI
 
 struct LoginView: View {
+
+    // State properties for binding to the email and password input fields.
     @State private var email = ""
     @State private var password = ""
+
+    // Reference to the shared authentication view model.
     @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
-        //parent container
+        // Primary container for the entire login view.
         VStack {
             
-            //header view
+            // Custom header view at the top of the login screen.
             AuthHeaderView(title1: "Hello.", title2: "Welcome Back.")
             
+            // Container for input fields.
             VStack(spacing: 40) {
+
                 CustomInputField(imageName: "envelope",
                                  placeholderText: "Email",
                                  text: $email)
@@ -32,6 +38,7 @@ struct LoginView: View {
             .padding(.horizontal, 32)
             .padding(.top, 44)
             
+            // Link for resetting the password.
             HStack {
                 Spacer()
                 
@@ -47,6 +54,7 @@ struct LoginView: View {
                 }
             }
             
+            // Button for initiating the login process.
             Button {
                 viewModel.login(withEmail: email, password: password)
             } label: {
@@ -58,10 +66,11 @@ struct LoginView: View {
                     .clipShape(Capsule())
                     .padding()
             }
-            .shadow(color: .gray.opacity(0.5), radius: 10, x:0, y: 0)
+            .shadow(color: .gray.opacity(0.5), radius: 10, x:0, y: 0) // Adding a shadow effect to the button.
             
             Spacer()
             
+            // Navigation link for users who don't have an account and want to sign up.
             NavigationLink {
                 RegistrationView()
                     .navigationBarBackButtonHidden()
@@ -78,8 +87,8 @@ struct LoginView: View {
             .padding(.bottom, 32)
             .foregroundColor(Color(.systemPurple))
         }
-        .ignoresSafeArea()
-        .navigationBarHidden(true)
+        .ignoresSafeArea()             // Ensure the view takes up the entire screen, ignoring safe area insets.
+        .navigationBarHidden(true)    // Hide the navigation bar for this view.
     }
 }
 
