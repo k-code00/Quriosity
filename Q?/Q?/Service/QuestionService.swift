@@ -31,11 +31,14 @@ struct QuestionService {
     }
     
     func fetchQuestions(completion: @escaping([Question]) -> Void) {
-        Firestore.firestore().collection("questions").getDocuments { snapshot, _ in
-            guard let documents = snapshot?.documents else { return }
-            let questions = documents.compactMap({ try? $0.data(as: Question.self) })
-            completion(questions)
-        }
+        Firestore.firestore().collection("questions")
+        //question sorter
+            .order(by: "timestamp", descending: true)
+            .getDocuments { snapshot, _ in
+                guard let documents = snapshot?.documents else { return }
+                let questions = documents.compactMap({ try? $0.data(as: Question.self) })
+                completion(questions)
+            }
     }
 }
 
