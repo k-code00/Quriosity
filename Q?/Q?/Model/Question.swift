@@ -18,4 +18,5 @@ struct Question: Identifiable, Decodable {
     var likes: Int
     
     var users: Users?
+    var didLike: Bool? = false
 }

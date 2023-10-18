@@ -51,8 +51,18 @@ struct QuestionService {
             }
     }
     
-    func likeQuestion() {
-        print("DEBUG: Like Tweet Here")
+    func likeQuestion(_ question: Question) {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        guard let questionId = question.id else { return }
+        
+        let userLikesRef = Firestore.firestore().collection("users").document(uid).collection("user-likes")
+        
+        Firestore.firestore().collection("questions").document(questionId)
+            .updateData(["likes": question.likes + 1]) { _ in
+                userLikesRef.document(questionId).setData([:]) { _ in
+                    print("DEBUG: Did You Like Question?")
+                }
+            }
     }
 }
 

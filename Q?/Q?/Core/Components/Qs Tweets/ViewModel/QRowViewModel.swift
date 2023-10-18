@@ -16,6 +16,6 @@ class QRowViewModel: ObservableObject {
     }
     
     func likeQuestion() {
-        service.likeQuestion()
+        service.likeQuestion(question)
     }
 }
