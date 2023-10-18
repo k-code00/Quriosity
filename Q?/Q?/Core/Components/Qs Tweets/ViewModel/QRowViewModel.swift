@@ -8,7 +8,7 @@
 import Foundation
 
 class QRowViewModel: ObservableObject {
-    let question: Question
+    @Published var question: Question
     private let service = QuestionService()
     
     init(question: Question) {
@@ -16,6 +16,8 @@ class QRowViewModel: ObservableObject {
     }
     
     func likeQuestion() {
-        service.likeQuestion(question)
+        service.likeQuestion(question) {
+            self.question.didLike = true
+        }
     }
 }

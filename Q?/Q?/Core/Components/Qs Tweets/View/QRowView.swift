@@ -9,7 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct QRowView: View {
-    let viewModel: QRowViewModel
+    @ObservedObject var viewModel: QRowViewModel
     
     init(question: Question) {
         self.viewModel = QRowViewModel(question: question)
@@ -73,8 +73,9 @@ struct QRowView: View {
                 Button {
                     viewModel.likeQuestion()
                 } label: {
-                    Image(systemName: "heart")
+                    Image(systemName: viewModel.question.didLike ?? false ? "heart.fill" : "heart")
                         .font(.subheadline)
+                        .foregroundColor(viewModel.question.didLike ?? false ? .red : .gray)
                 }
                 
                 Spacer()

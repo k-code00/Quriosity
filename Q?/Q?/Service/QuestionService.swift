@@ -51,7 +51,7 @@ struct QuestionService {
             }
     }
     
-    func likeQuestion(_ question: Question) {
+    func likeQuestion(_ question: Question, completion: @escaping() -> Void) {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         guard let questionId = question.id else { return }
         
@@ -60,7 +60,7 @@ struct QuestionService {
         Firestore.firestore().collection("questions").document(questionId)
             .updateData(["likes": question.likes + 1]) { _ in
                 userLikesRef.document(questionId).setData([:]) { _ in
-                    print("DEBUG: Did You Like Question?")
+                    completion()
                 }
             }
     }
