@@ -50,5 +50,9 @@ struct QuestionService {
                 completion(questions.sorted(by: { $0.timestamp.dateValue() > $1.timestamp.dateValue()}))
             }
     }
+    
+    func likeQuestion() {
+        print("DEBUG: Like Tweet Here")
+    }
 }
 

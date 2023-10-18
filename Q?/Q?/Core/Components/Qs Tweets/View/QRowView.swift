@@ -9,14 +9,18 @@ import SwiftUI
 import Kingfisher
 
 struct QRowView: View {
-    let question: Question
+    let viewModel: QRowViewModel
+    
+    init(question: Question) {
+        self.viewModel = QRowViewModel(question: question)
+    }
     
     
     var body: some View {
         VStack(alignment: .leading) {
             
             //profile image + user info + Qs
-            if let user = question.users {
+            if let user = viewModel.question.users {
                 HStack(alignment: .top, spacing: 12) {
                     KFImage(URL(string: user.profileImageUrl))
                         .resizable()
@@ -40,7 +44,7 @@ struct QRowView: View {
                                 .font(.caption)
                         }
                         //Q caption
-                        Text(question.caption)
+                        Text(viewModel.question.caption)
                             .font(.subheadline)
                             .multilineTextAlignment(.leading)
                     }
@@ -49,7 +53,7 @@ struct QRowView: View {
             //icons
             HStack {
                 Button {
-                    //action goes here
+                    // action goes here
                 } label: {
                     Image(systemName: "bubble.left")
                         .font(.subheadline)
@@ -67,7 +71,7 @@ struct QRowView: View {
                 Spacer()
                 
                 Button {
-                    //action goes here
+                    viewModel.likeQuestion()
                 } label: {
                     Image(systemName: "heart")
                         .font(.subheadline)
