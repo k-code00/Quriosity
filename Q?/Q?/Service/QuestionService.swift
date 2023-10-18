@@ -65,6 +65,20 @@ struct QuestionService {
             }
     }
     
+    func unlikeQuestion(_ question: Question, completion: @escaping() -> Void) {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        guard let questionId = question.id else { return }
+        guard question.likes > 0 else { return }
+        
+        let userLikesRef = Firestore.firestore().collection("users").document(uid).collection("user-likes")
+        
+        Firestore.firestore().collection("questions").document(questionId)
+            .updateData(["likes": question.likes - 1]) { _ in
+                userLikesRef.document(questionId).delete { _ in
+                    completion()
+                }
+            }
+    }
     
     func checkIfUserLikedQuestion(_ question: Question, completion: @escaping(Bool) -> Void) {
         guard let uid = Auth.auth().currentUser?.uid else { return }

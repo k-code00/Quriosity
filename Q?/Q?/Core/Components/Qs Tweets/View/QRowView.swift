@@ -71,6 +71,8 @@ struct QRowView: View {
                 Spacer()
                 
                 Button {
+                    viewModel.question.didLike ?? false ?
+                    viewModel.unlikeQuestion() :
                     viewModel.likeQuestion()
                 } label: {
                     Image(systemName: viewModel.question.didLike ?? false ? "heart.fill" : "heart")
