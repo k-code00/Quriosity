@@ -25,6 +25,7 @@ class QRowViewModel: ObservableObject {
     }
     
     // Function to "like" the question. It updates the Firestore and the local state.
+    //combine these 2 functions
     func likeQuestion() {
         service.likeQuestion(question) {
             // Update the local state to reflect that the user has liked the question.

@@ -3,4 +3,85 @@
    uuid = "E91261A3-27F6-4381-9D08-FF86F7011DD0"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "636940D5-763C-4969-B4F9-9D59D86AC5A2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Q?/Core/Components/Qs Tweets/ViewModel/QRowViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "likeQuestion()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "636940D5-763C-4969-B4F9-9D59D86AC5A2 - 874e1a8fad1cac70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Q_.QRowViewModel.likeQuestion() -&gt; ()"
+                  moduleName = "Q?"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/consultant/Desktop/Quriosity/Q%3F/Q%3F/Core/Components/Qs%20Tweets/ViewModel/QRowViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "53">
+               </Location>
+               <Location
+                  uuid = "636940D5-763C-4969-B4F9-9D59D86AC5A2 - 1d6f0b2cb31027c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Q_.QRowViewModel.likeQuestion() -&gt; ()"
+                  moduleName = "Q?"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/consultant/Desktop/Quriosity/Q%3F/Q%3F/Core/Components/Qs%20Tweets/ViewModel/QRowViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  uuid = "636940D5-763C-4969-B4F9-9D59D86AC5A2 - 874e1a8fad1cac70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Q_.QRowViewModel.likeQuestion() -&gt; ()"
+                  moduleName = "Q?"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/consultant/Desktop/Quriosity/Q%3F/Q%3F/Core/Components/Qs%20Tweets/ViewModel/QRowViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3866764E-0EBA-41A9-9DEA-A31A370DF122"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Q?/Core/Components/Qs Tweets/ViewModel/QRowViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "unlikeQuestion()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
