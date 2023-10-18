@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//reusable functionality that rounded the the rectangle on login/ signin screen
 struct RoundedShape: Shape {
     var corners: UIRectCorner
     

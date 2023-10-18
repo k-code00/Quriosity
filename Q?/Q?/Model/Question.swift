@@ -10,6 +10,7 @@ import Firebase
 import FirebaseFirestoreSwift
 import FirebaseFirestore
 
+//question object / model
 struct Question: Identifiable, Decodable {
     @DocumentID var id: String?
     let caption: String

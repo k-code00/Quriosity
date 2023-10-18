@@ -36,7 +36,7 @@ struct ProfileView: View {
 extension ProfileView {
     var headerView: some View {
         ZStack(alignment: .bottomLeading) {
-            Color(.systemBlue)
+            Color(.systemPurple)
                 .ignoresSafeArea()
             
             VStack {
@@ -86,7 +86,7 @@ extension ProfileView {
                 Text(viewModel.user.fullname)
                     .font(.title2).bold()
                 Image(systemName: "checkmark.seal.fill")
-                    .foregroundColor(Color(.systemBlue))
+                    .foregroundColor(Color(.systemPurple))
             }
             Text("@\(viewModel.user.username)")
                 .font(.subheadline)
@@ -129,7 +129,7 @@ extension ProfileView {
                     
                     if selectedFilter == item {
                         Capsule()
-                            .foregroundColor(Color(.systemBlue))
+                            .foregroundColor(Color(.systemPurple))
                             .frame(height: 3)
                         //slide effect
                             .matchedGeometryEffect(id: "filter", in: animation)

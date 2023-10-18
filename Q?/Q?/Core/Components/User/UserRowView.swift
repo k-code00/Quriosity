@@ -8,6 +8,7 @@
 import SwiftUI
 import Kingfisher
 
+//individual question cells
 struct UserRowView: View {
     let user: Users
     var body: some View {

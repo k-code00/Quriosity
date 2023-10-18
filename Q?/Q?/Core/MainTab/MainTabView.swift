@@ -28,21 +28,21 @@ struct MainTabView: View {
                     Image(systemName: "magnifyingglass")
                 }.tag(1)
             
-            NotificationsView()
-                .onTapGesture(perform: {
-                    self.selectedIndex = 2
-                })
-                .tabItem {
-                    Image(systemName: "bell")
-                }.tag(2)
+//            NotificationsView()
+//                .onTapGesture(perform: {
+//                    self.selectedIndex = 2
+//                })
+//                .tabItem {
+//                    Image(systemName: "bell")
+//                }.tag(2)
             
-            MessagesView()
-                .onTapGesture(perform: {
-                    self.selectedIndex = 3
-                })
-                .tabItem {
-                    Image(systemName: "envelope")
-                }.tag(3)
+//            MessagesView()
+//                .onTapGesture(perform: {
+//                    self.selectedIndex = 3
+//                })
+//                .tabItem {
+//                    Image(systemName: "envelope")
+//                }.tag(3)
         }
     }
 }

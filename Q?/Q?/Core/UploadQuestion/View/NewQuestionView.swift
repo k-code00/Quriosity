@@ -21,7 +21,7 @@ struct NewQuestionView: View {
                     presentationMode.wrappedValue.dismiss()
                 } label: {
                     Text("Cancel")
-                        .foregroundColor(Color(.systemBlue))
+                        .foregroundColor(Color(.systemPurple))
                 }
                 
                 Spacer()
@@ -33,7 +33,7 @@ struct NewQuestionView: View {
                         .bold()
                         .padding(.horizontal)
                         .padding(.vertical, 8)
-                        .background(Color(.systemBlue))
+                        .background(Color(.systemPurple))
                         .foregroundColor(.white)
                         .clipShape(Capsule())
                 }

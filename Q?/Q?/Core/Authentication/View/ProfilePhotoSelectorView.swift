@@ -46,7 +46,7 @@ struct ProfilePhotoSelectorView: View {
                         .font(.headline)
                         .foregroundColor(.white)
                         .frame(width: 340, height: 50)
-                        .background(Color(.systemBlue))
+                        .background(Color(.systemPurple))
                         .clipShape(Capsule())
                         .padding()
                 }
@@ -67,7 +67,7 @@ struct ProfilePhotoSelectorView: View {
 private struct ProfileImageModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .foregroundColor(Color(.systemBlue))
+            .foregroundColor(Color(.systemPurple))
             .frame(width: 180, height: 180)
             .clipShape(Circle())
     }
