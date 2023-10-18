@@ -16,6 +16,7 @@ class QRowViewModel: ObservableObject {
     private let service = QuestionService()
     
     // Initializer that sets up the initial state of the ViewModel.
+    //depenancy injection
     init(question: Question) {
         self.question = question
         

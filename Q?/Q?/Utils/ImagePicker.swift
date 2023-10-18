@@ -42,6 +42,7 @@ extension ImagePicker {
         let parent: ImagePicker
         
         // Initializer that sets the parent property.
+        //dependancy injection
         init(_ parent: ImagePicker) {
             self.parent = parent
         }

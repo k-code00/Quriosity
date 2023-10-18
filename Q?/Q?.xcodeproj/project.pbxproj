@@ -292,12 +292,12 @@
 		02FC32232AD72EEE008860D5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				02FC32402AD8ABBE008860D5 /* User */,
-				02FC32282AD7317A008860D5 /* Qs Tweets */,
 				02FC32552AD98527008860D5 /* TextArea.swift */,
 				02BB53D62AD9DD40007A8638 /* RoundedShape.swift */,
 				02BB53D82AD9E94B007A8638 /* CustomInputField.swift */,
 				027DA2E02ADF52FD00AC40A6 /* SearchBar.swift */,
+				02FC32402AD8ABBE008860D5 /* User */,
+				02FC32282AD7317A008860D5 /* Qs Tweets */,
 			);
 			path = Components;
 			sourceTree = "<group>";

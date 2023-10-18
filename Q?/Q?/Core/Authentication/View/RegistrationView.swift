@@ -75,10 +75,12 @@ struct RegistrationView: View {
                 HStack {
                     Text("Already Have An Account?")
                         .font(.footnote)
+                        .foregroundColor(Color(.systemPurple))
                     
                     Text("Sign In")
                         .font(.footnote)
                         .fontWeight(.semibold)
+                        .foregroundColor(Color(.systemPurple))
                 }
             }
             .padding(.bottom, 32)

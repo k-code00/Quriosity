@@ -12,6 +12,7 @@ struct TextArea: View {
     
     let placeholder: String
     
+    //dependancy injection
     init(_ placeholder: String, text: Binding<String>) {
         self.placeholder = placeholder
         self._text = text
