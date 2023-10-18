@@ -40,5 +40,15 @@ struct QuestionService {
                 completion(questions)
             }
     }
+    
+    func fetchQuestions(forUid uid: String, completion: @escaping([Question]) -> Void) {
+        Firestore.firestore().collection("questions")
+            .whereField("uid", isEqualTo: uid)
+            .getDocuments { snapshot, _ in
+                guard let documents = snapshot?.documents else { return }
+                let questions = documents.compactMap({ try? $0.data(as: Question.self) })
+                completion(questions.sorted(by: { $0.timestamp.dateValue() > $1.timestamp.dateValue()}))
+            }
+    }
 }
 

@@ -21,6 +21,7 @@
 		027DA2E52ADF622C00AC40A6 /* UploadQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DA2E42ADF622C00AC40A6 /* UploadQuestionViewModel.swift */; };
 		027DA2E72ADF6D0B00AC40A6 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DA2E62ADF6D0B00AC40A6 /* FeedViewModel.swift */; };
 		027DA2E92ADF6E4D00AC40A6 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DA2E82ADF6E4D00AC40A6 /* Question.swift */; };
+		027DA2EB2ADFC49400AC40A6 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DA2EA2ADFC49400AC40A6 /* ProfileViewModel.swift */; };
 		02BB53D72AD9DD40007A8638 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB53D62AD9DD40007A8638 /* RoundedShape.swift */; };
 		02BB53D92AD9E94B007A8638 /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB53D82AD9E94B007A8638 /* CustomInputField.swift */; };
 		02BB53DC2AD9EBDD007A8638 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB53DB2AD9EBDD007A8638 /* AuthHeaderView.swift */; };
@@ -81,6 +82,7 @@
 		027DA2E42ADF622C00AC40A6 /* UploadQuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadQuestionViewModel.swift; sourceTree = "<group>"; };
 		027DA2E62ADF6D0B00AC40A6 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		027DA2E82ADF6E4D00AC40A6 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		027DA2EA2ADFC49400AC40A6 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		02BB53D62AD9DD40007A8638 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
 		02BB53D82AD9E94B007A8638 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
 		02BB53DB2AD9EBDD007A8638 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
@@ -352,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				02FC323C2AD8484E008860D5 /* QFilterViewModel.swift */,
+				027DA2EA2ADFC49400AC40A6 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -644,6 +647,7 @@
 				027DA2E32ADF5B5400AC40A6 /* QuestionService.swift in Sources */,
 				02FC324D2AD8BE42008860D5 /* UserStatsView.swift in Sources */,
 				02FC325E2AD9A0B7008860D5 /* RegistrationView.swift in Sources */,
+				027DA2EB2ADFC49400AC40A6 /* ProfileViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
