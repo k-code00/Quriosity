@@ -24,10 +24,10 @@ struct QRowView: View {
                 VStack(alignment: .leading, spacing: 4) {
                     //user information
                     HStack {
-                        Text("Bruce Wayne")
+                        Text(user.fullname)
                             .font(.subheadline).bold()
-                            
-                        Text("@batman")
+                        
+                        Text("\(user.username)")
                             .foregroundColor(.gray)
                             .font(.caption)
                         
@@ -67,7 +67,7 @@ struct QRowView: View {
                     Image(systemName: "heart")
                         .font(.subheadline)
                 }
-
+                
                 Spacer()
                 
                 Button {
@@ -82,7 +82,7 @@ struct QRowView: View {
             
             Divider()
         }
-//        .padding()
+        //        .padding()
     }
 }
 
