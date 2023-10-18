@@ -17,5 +17,5 @@ struct Question: Identifiable, Decodable {
     let uid: String
     var likes: Int
     
-    var user: Users?
+    var users: Users?
 }

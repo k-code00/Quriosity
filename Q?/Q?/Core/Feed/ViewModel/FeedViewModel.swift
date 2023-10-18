@@ -13,7 +13,7 @@ class FeedViewModel: ObservableObject {
     let service = QuestionService()
     
     init() {
-        
+        fetchQuestions()
     }
     
     func fetchQuestions() {
