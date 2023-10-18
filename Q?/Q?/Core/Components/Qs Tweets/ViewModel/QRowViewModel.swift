@@ -7,7 +7,6 @@
 
 import Foundation
 
-// ViewModel for a single question row. It provides logic for handling user interactions such as liking and unliking a question.
 class QRowViewModel: ObservableObject {
 
     // Observable question object. Changes to this will be reflected in the view.

@@ -20,8 +20,6 @@ struct Q_App: App {
         WindowGroup {
             NavigationView {
                 ContentView()
-//                ExploreView()
-                
             }
             .environmentObject(viewModel)
         }

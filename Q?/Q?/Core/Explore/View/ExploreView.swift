@@ -17,6 +17,7 @@ struct ExploreView: View {
                 .padding()
             
             ScrollView {
+                // LazyVStack is a stack view that lazily loads its content, providing better performance for large lists.
                 LazyVStack {
                     ForEach(viewModel.searchableUsers) { user in
                         NavigationLink {

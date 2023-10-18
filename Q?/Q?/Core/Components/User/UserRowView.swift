@@ -34,7 +34,3 @@ struct UserRowView: View {
         .padding(.vertical)
     }
 }
-
-//#Preview {
-//    UserRowView()
-//}
