@@ -15,6 +15,9 @@
 		02027BD32ADC9102002D0FF3 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02027BD22ADC9102002D0FF3 /* Users.swift */; };
 		02027BD62ADC98F4002D0FF3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 02027BD52ADC98F4002D0FF3 /* Kingfisher */; };
 		02027BDC2ADD863D002D0FF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02027BDB2ADD863D002D0FF3 /* GoogleService-Info.plist */; };
+		020F1B372AE1626B00B73DA4 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F1B362AE1626B00B73DA4 /* Message.swift */; };
+		020F1B392AE1642500B73DA4 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F1B382AE1642500B73DA4 /* Notifications.swift */; };
+		020F1B402AE166EC00B73DA4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F1B3F2AE166EC00B73DA4 /* Constants.swift */; };
 		027DA2DD2ADE0F3A00AC40A6 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DA2DC2ADE0F3A00AC40A6 /* ExploreViewModel.swift */; };
 		027DA2E12ADF52FD00AC40A6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DA2E02ADF52FD00AC40A6 /* SearchBar.swift */; };
 		027DA2E32ADF5B5400AC40A6 /* QuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DA2E22ADF5B5400AC40A6 /* QuestionService.swift */; };
@@ -77,6 +80,9 @@
 		02027BD02ADC8E0A002D0FF3 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		02027BD22ADC9102002D0FF3 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		02027BDB2ADD863D002D0FF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		020F1B362AE1626B00B73DA4 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		020F1B382AE1642500B73DA4 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		020F1B3F2AE166EC00B73DA4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		027DA2DC2ADE0F3A00AC40A6 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		027DA2E02ADF52FD00AC40A6 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		027DA2E22ADF5B5400AC40A6 /* QuestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionService.swift; sourceTree = "<group>"; };
@@ -151,6 +157,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		020F1B3A2AE164B200B73DA4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		020F1B3D2AE1654300B73DA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		020F1B3E2AE1658700B73DA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02BB53EF2ADC1216007A8638 /* ImagePicker.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		027DA2EC2ADFCF9B00AC40A6 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,7 +198,8 @@
 		02BB53EE2ADC1201007A8638 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				02BB53EF2ADC1216007A8638 /* ImagePicker.swift */,
+				020F1B3E2AE1658700B73DA4 /* Views */,
+				020F1B3F2AE166EC00B73DA4 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -198,9 +227,11 @@
 		02FC31F22AD72D99008860D5 /* Q? */ = {
 			isa = PBXGroup;
 			children = (
+				02FC32202AD72ECA008860D5 /* Model */,
+				020F1B3D2AE1654300B73DA4 /* Views */,
+				020F1B3A2AE164B200B73DA4 /* ViewModels */,
 				02BB53EE2ADC1201007A8638 /* Utils */,
 				02FC32212AD72ECC008860D5 /* Extensions */,
-				02FC32202AD72ECA008860D5 /* Model */,
 				02FC321F2AD72EC8008860D5 /* Service */,
 				02FC321D2AD72EB6008860D5 /* Core */,
 				02FC31F32AD72D99008860D5 /* Q_App.swift */,
@@ -269,6 +300,8 @@
 			children = (
 				02027BD22ADC9102002D0FF3 /* Users.swift */,
 				027DA2E82ADF6E4D00AC40A6 /* Question.swift */,
+				020F1B362AE1626B00B73DA4 /* Message.swift */,
+				020F1B382AE1642500B73DA4 /* Notifications.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -652,6 +685,8 @@
 				02FC32332AD79CFA008860D5 /* ExploreView.swift in Sources */,
 				027DA2E52ADF622C00AC40A6 /* UploadQuestionViewModel.swift in Sources */,
 				02BB53F02ADC1216007A8638 /* ImagePicker.swift in Sources */,
+				020F1B402AE166EC00B73DA4 /* Constants.swift in Sources */,
+				020F1B392AE1642500B73DA4 /* Notifications.swift in Sources */,
 				02FC32542AD9815F008860D5 /* NewQuestionView.swift in Sources */,
 				027DA2E12ADF52FD00AC40A6 /* SearchBar.swift in Sources */,
 				02BB53ED2ADC0819007A8638 /* ProfilePhotoSelectorView.swift in Sources */,
@@ -660,6 +695,7 @@
 				02BB53D72AD9DD40007A8638 /* RoundedShape.swift in Sources */,
 				02FC324F2AD8E214008860D5 /* SideMenuOptionRowView.swift in Sources */,
 				02FC322D2AD79A20008860D5 /* MainTabView.swift in Sources */,
+				020F1B372AE1626B00B73DA4 /* Message.swift in Sources */,
 				02FC325B2AD9A09B008860D5 /* LoginView.swift in Sources */,
 				02BB53EB2ADB5896007A8638 /* AuthViewModel.swift in Sources */,
 				02BB53F22ADC278B007A8638 /* ImageUploader.swift in Sources */,
