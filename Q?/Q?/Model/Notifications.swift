@@ -5,7 +5,7 @@
 //  Created by kojo on 19/10/2023.
 //
 
-import Foundation
+import SwiftUI
 
 struct Notification: Identifiable {
     let id: String
@@ -14,7 +14,7 @@ struct Notification: Identifiable {
     let profileImageUrl: String
     let type: NotificationType
     var tweetId: String?
-    var question: Question?
+    var tweet: Tweet?
     var userIsFollowed = false
     
     init(dictionary: [String: Any]) {
