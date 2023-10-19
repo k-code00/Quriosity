@@ -7,9 +7,12 @@
 
 import SwiftUI
 import Firebase
+import FirebaseAuth
+import FirebaseFirestore
+import FirebaseStorage
 
 class AuthViewModel: ObservableObject {
-    @Published var userSession: FirebaseAuth.User?
+    @Published var userSession: User?
     @Published var isAuthenticating = false
     @Published var error: Error?
     @Published var user: User?
@@ -86,7 +89,7 @@ class AuthViewModel: ObservableObject {
     }
     
     func fetchUser() {
-        guard let uid = userSession?.uid else { return }
+        guard let uid = userSession?.id else { return }
         
         Firestore.firestore().collection("users").document(uid).getDocument { snapshot, _ in
             guard let data = snapshot?.data() else { return }
@@ -106,3 +109,4 @@ class AuthViewModel: ObservableObject {
         }
     }
 }
+

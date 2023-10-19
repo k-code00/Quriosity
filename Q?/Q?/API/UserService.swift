@@ -2,7 +2,7 @@
 //  UserService.swift
 //  Q?
 //
-//  Created by Consultant on 19/10/2023.
+//  Created by kojo on 19/10/2023.
 //
 
 import Firebase
@@ -17,7 +17,7 @@ struct UserService {
         }
     }
     
-    static func fetchUserStats(user: Users, completion: @escaping(UserStats) -> Void) {
+    static func fetchUserStats(user: User, completion: @escaping(UserStats) -> Void) {
         let followersRef = COLLECTION_FOLLOWERS.document(user.id).collection("user-followers")
         let followingRef = COLLECTION_FOLLOWING.document(user.id).collection("user-following")
         

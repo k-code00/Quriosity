@@ -2,30 +2,38 @@
 //  SearchView.swift
 //  Q?
 //
-//  Created by Consultant on 19/10/2023.
+//  Created by kojo on 19/10/2023.
 //
 
 import SwiftUI
 
-struct SearchBar: View {
-    @Binding var text: String
-    
+struct SearchView: View {
+    @State var searchText = ""
+    @ObservedObject var viewModel = SearchViewModel(config: .search)
+
     var body: some View {
-        HStack {
-            TextField("Search...", text: $text)
-                .padding(8)
-                .padding(.horizontal, 24)
-                .background(Color(.systemGray6))
-                .cornerRadius(8)
-                .overlay(
-                    HStack {
-                        Image(systemName: "magnifyingglass")
-                            .foregroundColor(.gray)
-                            .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                            .padding(.leading, 8)
-                    }
-                )
+        ScrollView {
+            SearchBar(text: $searchText)
+                .padding()
+
+            VStack(alignment: .leading) {
+                ForEach(searchText.isEmpty ? viewModel.users : viewModel.filteredUsers(searchText)) { user in
+                    HStack { Spacer() }
+                    
+                    NavigationLink(
+                        destination: LazyView(UserProfileView(user: user)),
+                        label: {
+                            UserCell(user: user)
+                        })
+                }
+            }
+            .padding(.leading)
         }
-        .padding(.horizontal, 10)
+    }
+}
+
+struct SearchView_Previews: PreviewProvider {
+    static var previews: some View {
+        SearchView()
     }
 }

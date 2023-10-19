@@ -2,7 +2,7 @@
 //  FeedViewModel.swift
 //  Q?
 //
-//  Created by Consultant on 19/10/2023.
+//  Created by kojo on 19/10/2023.
 //
 
 import SwiftUI
@@ -14,19 +14,20 @@ class FeedViewModel: ObservableObject {
         fetchTweets()
     }
     
-// ** Uncomment this function to fetch tweets as we did in course ** //
+// ** Uncomment this function to fetch tweets ** //
     
-    func fetchTweets() {
-        COLLECTION_TWEETS.getDocuments { snapshot, _ in
-            guard let documents = snapshot?.documents else { return }
-            self.tweets = documents.map({ Tweet(dictionary: $0.data()) })
-        }
-    }
+//    func fetchTweets() {
+//        COLLECTION_TWEETS.getDocuments { snapshot, _ in
+//            guard let documents = snapshot?.documents else { return }
+//            self.tweets = documents.map({ Tweet(dictionary: $0.data()) })
+//        }
+//    }
 
 // ** This function fetches tweets from people that the user follows ** //
     
     func fetchTweets() {
-        guard let uid = AuthViewModel.shared.userSession?.uid else { return }
+        guard let uid = AuthViewModel.shared.userSession?.id else { return }
+//        guard let uid = AuthViewModel.shared.userSession?.uid else { return }
         var tweets = [Tweet]()
         COLLECTION_USERS.document(uid).collection("user-feed").getDocuments { snapshot, _ in
             guard let documents = snapshot?.documents else { return }

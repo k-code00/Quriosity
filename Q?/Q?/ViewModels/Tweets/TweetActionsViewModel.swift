@@ -2,7 +2,7 @@
 //  TweetActionViewModel.swift
 //  Q?
 //
-//  Created by Consultant on 19/10/2023.
+//  Created by kojo on 19/10/2023.
 //
 
 import SwiftUI
@@ -18,7 +18,7 @@ class TweetActionViewModel: ObservableObject {
     }
     
     func likeTweet() {
-        guard let uid = AuthViewModel.shared.userSession?.uid else { return }
+        guard let uid = AuthViewModel.shared.userSession?.id else { return }
         let tweetLikesRef = COLLECTION_TWEETS.document(tweet.id).collection("tweet-likes")
         let userLikesRef = COLLECTION_USERS.document(uid).collection("user-likes")
         
@@ -34,7 +34,7 @@ class TweetActionViewModel: ObservableObject {
     }
     
     func unlikeTweet() {
-        guard let uid = AuthViewModel.shared.userSession?.uid else { return }
+        guard let uid = AuthViewModel.shared.userSession?.id else { return }
         let tweetLikesRef = COLLECTION_TWEETS.document(tweet.id).collection("tweet-likes")
         let userLikesRef = COLLECTION_USERS.document(uid).collection("user-likes")
         
@@ -50,7 +50,7 @@ class TweetActionViewModel: ObservableObject {
     }
     
     func checkIfUserLikedTweet() {
-        guard let uid = AuthViewModel.shared.userSession?.uid else { return }
+        guard let uid = AuthViewModel.shared.userSession?.id else { return }
         let userLikesRef = COLLECTION_USERS.document(uid).collection("user-likes").document(tweet.id)
         
         userLikesRef.getDocument { snapshot, _ in

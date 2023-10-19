@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import KingfisherSwiftUI
+import Kingfisher
 
 struct SideMenuHeaderView: View {
     private let user = AuthViewModel.shared.user
